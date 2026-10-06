@@ -1,0 +1,8 @@
+# Environment files (NEVER push local secrets)
+.env
+
+# Root-level build or IDE folders if any
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
