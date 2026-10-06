@@ -16,10 +16,11 @@ Make sure you have these two things installed before starting:
 ### Step 2: Clone the Repo
 Open up your terminal or PowerShell and clone the project:
 
-```bash
+bash
 git clone [https://github.com/LovesLT/mood-capsule-docker.git](https://github.com/LovesLT/mood-capsule-docker.git)
 cd mood-capsule-docker
-Step 3: Set up your .env file
+
+### Step 3: Set up your .env file
 We use a local environment file to handle database credentials safely without pushing secrets to GitHub.
 
 Find the .env.example file in the root folder.
@@ -32,14 +33,14 @@ Mac / Linux: cp .env.example .env
 
 The default settings inside work right out of the box for local testing, so you're good to go!
 
-Step 4: Fire it up! 🐳
+### Step 4: Fire it up! 🐳
 Once your .env file is in place, run this single command in the root folder:
 
 Bash
 docker compose up --build -d
 Give it about 15–20 seconds on your very first run. The database has a health check to make sure it's fully ready before the backend kicks off and runs your Flyway migrations automatically.
 
-Step 5: Check it out
+### Step 5: Check it out
 Once everything is running, you can access the app here:
 
 Frontend UI: http://localhost:4200
